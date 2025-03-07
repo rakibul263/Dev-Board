@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question & Answer</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header class="container mx-auto">
+            <nav class="flex justify-between bg-white p-5 rounded-2xl shadow-lg mt-2">
+                <div class="flex gap-1">
+                    <img src="./assets/logo.png" alt="Logo">
+                    <h1 class="text-[35.5px]">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Back to Desk</button>
+                </div>
+            </nav>
+        </header>
+
+        <section class="container mx-auto">
+            <h2 class="text-2xl font-bold text-center mt-2 mb-2">Blogs</h2>
+
+            <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mt-4">
+                <div class="collapse-title font-semibold">Question-1: What are the
+                    different ways to select an element in the DOM?</div>
+                <div class="collapse-content text-sm">
+                    <p class="pt-3">
+                        There are multiple ways to select an element in the DOM. Some of the most common ways are:
+                    <ul class="timeline pt-2">
+                        <li>
+                            <div class="timeline-start timeline-box font-bold">getElementById()</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-end timeline-box font-bold">getElementsByClassName()</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box font-bold">getElementsByTagName()</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-end timeline-box font-bold">querySelector()</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div class="timeline-start timeline-box font-bold">querySelectorAll()</div>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mt-4">
+                <div class="collapse-title font-semibold">Question-2: What is the
+                    difference between innerHTML, innerText, and textContent ? </div>
+                <div class="collapse-content text-sm">
+                    <p>
+                    <p><span class="font-bold">innerHTML:</span> Gets or sets the HTML content inside an element,
+                        including
+                        HTML tags</p>
+                    <p><span class="font-bold">innerText:</span> Gets or sets the visible text content, respecting CSS
+                        styles.</p>
+                    <p><span class="font-bold">textContent:</span> Gets or sets the text content, including hidden text,
+                        but
+                        ignores HTML tags and styles.</p>
+                    </p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mt-4">
+                <div class="collapse-title font-semibold">Question-3: What is event
+                    delegation in the DOM?</div>
+                <div class="collapse-content text-sm">
+                    <p class="pt-3">
+                        Event delegation is when you attach a single event listener to a parent element, and it handles
+                        events for child elements. This reduces the number of event listeners and improves performance.
+                    </p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mt-4">
+                <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+                <div class="collapse-content text-sm">
+                    <p class="pt-3">
+                        Event bubbling is the process where an event starts at the target element and then "bubbles up"
+                        to its parent elements, triggering any event listeners on those parents. It allows you to handle
+                        events at a higher level in the DOM.
+                    </p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border mt-4">
+                <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using
+                    JavaScript?</div>
+                <div class="collapse-content text-sm">
+                    <p class="pt-3">
+                    <h2 class="font-bold">Create an Element</h2>
+                    <p>
+                        const newElement = document.createElement('div');
+                    </p>
+                    <h2 class="font-bold">Add an Element</h2>
+                    <p>
+                        parentElement.appendChild(newElement);
+                    </p>
+                    <h2 class="font-bold">Remove an Element</h2>
+                    <p>
+                        parentElement.removeChild(childElement);
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="./Script/question.js"></script>
+    </body>
+
+</html>
